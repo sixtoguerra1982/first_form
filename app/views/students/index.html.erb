@@ -1,0 +1,14 @@
+<ul>
+    <% @students.each do |student|  %>
+        <li><%= student.name %> | <%= student.age %></li>
+    <% end %>
+</ul>
+
+
+<form action="<%= students_create_path %>" method="get">
+    <label>Name</label>
+    <input type="text" name="name" required>
+    <label>Age</label>
+    <input name="age" type="number" value="0" min="1" max="99">
+    <input type="submit" value="Enviar">
+</form>
