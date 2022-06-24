@@ -1,11 +1,11 @@
 <h1> Nuestro primer formulario </h1>
-<form>
+<form action="<%= users_create_path %>" method="get">
  <label>Email</label>
  <input type="email" name="email">
  <label>Nombre</label>
  <input name="nombre">
- <label>Ejemplo de Value</label>
- <input name="hello_input" type="text" value="hola mundo">
+ <label>Edad</label>
+ <input name="age" type="number" value="0" min="1" max="99">
  <input type="submit" value="Enviar">
 </form>
 
