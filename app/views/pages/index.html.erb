@@ -1,0 +1,20 @@
+<h1> Nuestro primer formulario </h1>
+<form>
+ <label>Email</label>
+ <input type="email" name="email">
+ <label>Nombre</label>
+ <input name="nombre">
+ <label>Ejemplo de Value</label>
+ <input name="hello_input" type="text" value="hola mundo">
+ <input type="submit" value="Enviar">
+</form>
+
+
+<h1> Despues de Enviar </h1>
+<%= params %>
+<p>Email</p>
+<%= params[:email] %>
+<p>Nombre</p>
+<%= params[:nombre] %>
+<p>Hola_Mundo:</p>
+<%= params[:hello_input] %>
